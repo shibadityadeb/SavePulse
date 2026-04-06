@@ -3,7 +3,7 @@ import {
   ConfirmationResult,
   PhoneAuthProvider,
   signInWithCredential,
-} from 'firebase/auth';
+} from 'firebase/auth/react-native';
 import { auth } from './firebase';
 
 /**

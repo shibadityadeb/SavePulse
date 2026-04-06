@@ -54,11 +54,6 @@ export interface VerifyOTPResponse {
 class AuthService {
   private confirmationResult: ConfirmationResult | null = null;
 
-  /**
-   * Validates phone number format
-   * Accepts E.164 format: +[country code][number]
-   * Example: +1234567890, +919876543210
-   */
   private validatePhoneNumber(phoneNumber: string): boolean {
     // E.164 format validation: +1-15 digits
     const e164Regex = /^\+[1-9]\d{1,14}$/;
